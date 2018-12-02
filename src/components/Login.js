@@ -6,7 +6,7 @@ class Login extends React.Component {
       <div>
         <h1>Welcome to the Would You Rather App! </h1>
         <span>Please Sign in to continue</span>
-        <img src="public/favicon.ico" alt="logo" />
+        <img src="https://api.adorable.io/avatars/255/hh.png"  alt="logo"/>
         <h3>Sign In </h3>
 
         <select>

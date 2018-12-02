@@ -1,9 +1,26 @@
 import React from "react";
+import { connect } from "react-redux";
+import Unanswered from "./Unanswered.js";
 
 class Home extends React.Component {
   render() {
-    return <div>Home Page</div>;
+    console.log(this.props);
+    return (
+      <div>
+        <div>
+          <Unanswered />
+        </div>
+        <div>Answered Questions</div>
+      </div>
+    );
   }
 }
 
-export default Home;
+function mapStateToProps({ users, questions }) {
+  return {
+    questionsID: Object.keys(questions),
+    usersID: Object.keys(users)
+  };
+}
+
+export default connect(mapStateToProps)(Home);

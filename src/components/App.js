@@ -12,9 +12,11 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Home />
         <Login />
 
         <NewQuestions />
+
       </div>
     );
   }
